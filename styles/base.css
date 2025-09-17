@@ -1,0 +1,82 @@
+/* Google Font */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  #course-title {
+    display: block; /* centers easily */
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Navigation */
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #0055aa;
+  }
+  
+  /* Main */
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  main h1 {
+    text-align: center;
+  }
+  
+  /* Card layout */
+  .card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .card img {
+    max-width: 100%;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 6px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background-color: #003366;
+    color: white;
+    padding: 1rem;
+  }
+  
