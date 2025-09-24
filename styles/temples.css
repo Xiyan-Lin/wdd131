@@ -91,7 +91,7 @@
     margin: 1.25rem auto;
     padding: 0 1rem;
   }
-  
+
   main h1 {
     text-align: center;
   }
@@ -132,25 +132,3 @@
     margin-top: 1.5rem;
     color: #444;
   }
- /* 
-  @media (min-width: 768px) {
-    .header-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-  
-    .main-nav {
-      display: flex;         
-      position: static;      
-      width: auto;           
-      background: none;      
-      padding: 0;
-    }
-  
-    .main-nav a {
-      display: inline-block;
-      margin: 0 0 0 1rem;
-      color: var(--accent);
-    }
-  }*/
