@@ -1,0 +1,77 @@
+/* Applied for larger viewports (adjust min-width as desired) */
+@media (min-width: 700px) {
+    .header-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* 讓標題靠左、nav 靠右 */
+    }
+      
+    .course-title {
+        margin: 0;
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: white;
+        white-space: nowrap; /* 保證不換行 */
+    }
+  /* 隱藏漢堡 */
+    .hambtn {
+        display: none; /* hide hamburger on larger screens */
+    }
+  /*
+    .main-nav {
+        display: flex !important;
+        position: static;
+        background: transparent;
+        padding: 0;
+        gap: 1.5rem;
+        margin-left: auto; 
+        align-items: center;
+    }
+    */
+    .main-nav {
+        display: flex;         /* 讓 nav 水平排列 */
+        position: static;      /* 取消 absolute */
+        width: auto;           /* 不要吃滿 */
+        background: none;      /* 移除背景色 */
+        padding: 0;
+    }
+    
+    .main-nav a {
+        display: inline-block;
+        margin: 0 0 0 1rem;
+        color: var(--accent);
+    }
+ 
+    .main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem;
+    border-radius: 6px;
+    }
+
+    .main-nav a:hover,
+    .main-nav a:focus {
+      background: rgba(255,255,255,0.12);
+    }
+  
+    main {
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+  
+    /* gallery: desktop grid 3 columns */
+    .gallery {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+  
+    figure { /* slightly larger cards */
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    figure:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.10);
+    }
+  }
+  

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Temple Album</title>
+  <meta name="description" content="WDD 131 – Temple Album. A responsive gallery of temple photos." />
+  <meta name="author" content="Xiyan Lin" />
+
+  <!-- Google Fonts with preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles (mobile-first then large) -->
+  <link rel="stylesheet" href="styles/temples.css" />
+  <link rel="stylesheet" href="styles/temples-large.css" />
+
+  <!-- JS: defer ensures DOM is parsed before script runs -->
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-row">
+      <h2 id="site-title" class="course-title">Temple Album</h2>
+
+      <!-- Navigation -->
+      <nav id="main-nav" class="main-nav" role="navigation" aria-label="Main menu">
+        <a href="index.html">Home</a>
+        <a href="#old">Old</a>
+        <a href="#new">New</a>
+        <a href="#large">Large</a>
+        <a href="#small">Small</a>
+      </nav>
+
+      <!-- Hamburger button (only visible on small screens) -->
+      <button id="hambtn" class="hambtn" aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+
+    <section class="gallery">
+      <figure>
+        <img src="images/temple.jpg" alt="Temple One" loading="lazy" width="400" height="250">
+        <figcaption>Temple One</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple.jpg" alt="Temple Two" loading="lazy" width="400" height="250">
+        <figcaption>Temple Two</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple.jpg" alt="Temple Three" loading="lazy" width="400" height="250">
+        <figcaption>Temple Three</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple.jpg" alt="Temple Four" loading="lazy" width="400" height="250">
+        <figcaption>Temple Four</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple.jpg" alt="Temple Five" loading="lazy" width="400" height="250">
+        <figcaption>Temple Five</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple.jpg" alt="Temple Six" loading="lazy" width="400" height="250">
+        <figcaption>Temple Six</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple.jpg" alt="Temple Seven" loading="lazy" width="400" height="250">
+        <figcaption>Temple Seven</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple.jpg" alt="Temple Eight" loading="lazy" width="400" height="250">
+        <figcaption>Temple Eight</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple.jpg" alt="Temple Nine" loading="lazy" width="400" height="250">
+        <figcaption>Temple Nine</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="currentyear"></span> | Xiyan Lin | Taiwan</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
