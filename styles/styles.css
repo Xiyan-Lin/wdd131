@@ -1,0 +1,101 @@
+/* styles/place.css */
+
+:root {
+    --red: #c8102e;
+    --green: #007a33;
+    --white: #fff;
+    --transparent-white: rgba(255, 255, 255, 0.8);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: var(--red);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.green-stripe {
+    height: 0.5rem;
+    background-color: var(--green);
+}
+
+.hero {
+    background-image: url('https://c8.alamy.com/comp/2K4C9JG/a-vertical-shot-of-a-ring-tailed-lemur-hanging-from-a-tree-branch-in-a-zoo-in-daylight-2K4C9JG.jpg'); /* Mobile image - vertical lemur */
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.data, .weather {
+    background-color: var(--transparent-white);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.data h2, .weather h2 {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 0.5rem;
+    margin: -1rem -1rem 1rem -1rem;
+    text-align: center;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.mobile-icon {
+    display: block;
+    margin: 0 auto 1rem;
+    width: 50px;
+    height: 50px;
+}
+
+footer {
+    background-color: var(--red);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        background-image: url('https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1200,h_798/https://neprimateconservancy.org/wp-content/uploads/2022/01/Ring-Tailed-Lemur-iStock-1288813254-resize1200.jpg'); /* Wide image - group of lemurs */
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        min-height: 60vh;
+    }
+
+    .data {
+        width: 25%;
+        margin: 1rem;
+    }
+
+    .weather {
+        width: 25%;
+        margin: 1rem;
+    }
+
+    .mobile-icon {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: '⛅';
+        margin-left: 0.5rem;
+    }
+}
