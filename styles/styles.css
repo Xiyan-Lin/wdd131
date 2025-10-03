@@ -7,9 +7,14 @@
     --transparent-white: rgba(255, 255, 255, 0.8);
 }
 
+/* Google Font */
 body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 header {
@@ -29,7 +34,7 @@ header h1 {
 }
 
 .hero {
-    background-image: url('https://c8.alamy.com/comp/2K4C9JG/a-vertical-shot-of-a-ring-tailed-lemur-hanging-from-a-tree-branch-in-a-zoo-in-daylight-2K4C9JG.jpg'); /* Mobile image - vertical lemur */
+    /*background-image: url('https://c8.alamy.com/comp/2K4C9JG/a-vertical-shot-of-a-ring-tailed-lemur-hanging-from-a-tree-branch-in-a-zoo-in-daylight-2K4C9JG.jpg'); /* Mobile image - vertical lemur */
     background-size: cover;
     background-position: center;
     min-height: 50vh;
@@ -71,14 +76,19 @@ footer {
     font-size: 0.8rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 601px) {
     .hero {
-        background-image: url('https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1200,h_798/https://neprimateconservancy.org/wp-content/uploads/2022/01/Ring-Tailed-Lemur-iStock-1288813254-resize1200.jpg'); /* Wide image - group of lemurs */
+        /*background-image: url('https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1200,h_798/https://neprimateconservancy.org/wp-content/uploads/2022/01/Ring-Tailed-Lemur-iStock-1288813254-resize1200.jpg'); /* Wide image - group of lemurs */
+        background-image: url('../images/TW-large.webp');
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-end;
         min-height: 60vh;
     }
+
+    .hero picture {
+        display: none; /* 隱藏 picture */
+    }    
 
     .data {
         width: 25%;

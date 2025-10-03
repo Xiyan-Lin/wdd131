@@ -3,16 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madagascar</title>
+    <title>Taiwan</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Country Page">
+    <meta name="author" content="Xiyan Lin">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/getdates.js" defer></script>
+    
+    <!-- Google Fonts with preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
     <header>
-        <h1>Madagascar</h1>
+        <h1>Taiwan</h1>
         <div class="green-stripe"></div>
     </header>
     <main class="hero">
+        <picture>
+            <source media="(max-width: 600px)" srcset="images/TW-mobile.webp">
+            <source media="(min-width: 601px)" srcset="images/TW-large.webp">
+            <img src="" alt="Taiwan" style="width: 100%; height: auto;">
+        </picture>
         <section class="data">
             <h2>Data</h2>
             <p>Area: 592,796 sq km</p>
@@ -34,7 +46,7 @@
         </section>
     </main>
     <footer>
-        <p>© <span id="year"></span> Xiyan Lin 🌸 Madagascar</p>
+        <p>© <span id="year"></span> Xiyan Lin 🌸 Taiwan</p>
         <p>Last Modification: <span id="lastmodified"></span></p>
     </footer>
     <script src="scripts/scripts.js" defer></script>
