@@ -1,10 +1,10 @@
 // scripts/place.js
 
 document.addEventListener('DOMContentLoaded', () => {
-    const yearSpan = document.getElementById('year');
+    const yearSpan = document.getElementById('currentyear');
     yearSpan.textContent = new Date().getFullYear();
 
-    const lastModifiedSpan = document.getElementById('lastmodified');
+    const lastModifiedSpan = document.getElementById('lastModified');
     lastModifiedSpan.textContent = document.lastModified;
 
     const temperature = 10; // °C
