@@ -1,7 +1,7 @@
 // scripts/place.js
 
 document.addEventListener('DOMContentLoaded', () => {
-    const yearSpan = document.getElementById('currentyear');
+    const yearSpan = document.getElementById('year');
     yearSpan.textContent = new Date().getFullYear();
 
     const lastModifiedSpan = document.getElementById('lastModified');
