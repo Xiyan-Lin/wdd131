@@ -1,0 +1,158 @@
+:root {
+  --primary: #0b5ffd;
+  --bg: #f7f9fb;
+  --card: #ffffff;
+  --muted: #666;
+  --radius: 10px;
+  --max-width: 1100px;
+  --gap: 1rem;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+/* Reset-like */
+* { box-sizing: border-box; }
+html,body { height:100%; margin:0; }
+body {
+  margin:0;
+  background: var(--bg);
+  color: #222;
+  line-height:1.45;
+  -webkit-font-smoothing:antialiased;
+}
+
+.site-header {
+  background: var(--primary);
+  color: #fff;
+  padding: 0.9rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.header-inner {
+  display:flex;
+  flex-direction:column;
+  gap:0.6rem;
+  max-width: var(--max-width);
+  margin:0 auto;
+  align-items:stretch;
+}
+
+.site-title {
+  margin:0;
+  font-size:1.125rem;
+  font-weight:700;
+  color: #fff;
+}
+
+/* Nav row */
+.main-nav {
+  display:flex;
+  gap:0.5rem;
+  flex-wrap:wrap;
+}
+.nav-btn {
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  border: none;
+  padding: 0.45rem 0.65rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight:600;
+}
+.nav-btn[aria-pressed="true"] {
+  background: #fff;
+  color: var(--primary);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+/* Container */
+.container {
+  max-width: var(--max-width);
+  margin: 1.25rem auto;
+  padding: 0 1rem;
+}
+
+/* Section title */
+#section-title { text-align:center; margin:0 0 1rem 0; }
+
+/* Gallery grid */
+.gallery {
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap);
+}
+
+/* Figure/card */
+figure {
+  margin:0;
+  background: var(--card);
+  border-radius: var(--radius);
+  overflow:hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  display:flex;
+  flex-direction:column;
+}
+
+figure img {
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+figcaption {
+  padding: 0.85rem 1rem;
+  display:flex;
+  gap:1rem;
+  align-items:flex-start;
+  justify-content:space-between;
+}
+
+.temple-info {
+  display:flex;
+  flex-direction:column;
+  gap:0.25rem;
+}
+
+.temple-name {
+  font-weight:700;
+  font-size:1rem;
+  color:#111;
+}
+
+.temple-meta {
+  font-size:0.92rem;
+  color:var(--muted);
+}
+
+/* small chip for area */
+.temple-area {
+  background: #f4f6fb;
+  color: #333;
+  padding:0.3rem 0.5rem;
+  border-radius:6px;
+  font-weight:600;
+  font-size:0.9rem;
+  align-self:flex-start;
+}
+
+/* Footer */
+.site-footer {
+  text-align:center;
+  padding:1rem;
+  color:var(--muted);
+  margin-top:1.5rem;
+}
+
+/* Responsive: larger screens show grid columns */
+@media (min-width: 700px) {
+  .header-inner { flex-direction:row; align-items:center; justify-content:space-between; }
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+  figcaption {
+    padding: 1rem;
+  }
+}

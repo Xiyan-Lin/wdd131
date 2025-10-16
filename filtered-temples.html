@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Filtered Temples</title>
+  <meta name="description" content="A responsive, filterable gallery of temples using JavaScript to dynamically generate cards and native lazy loading." />
+  <meta name="author" content="Xiyan Lin" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/filtered-temples.css" />
+
+  <!-- Script -->
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="site-title">Temple Album — Filtered View</h1>
+
+      <!-- Navigation: use data-filter attributes to indicate filter type -->
+      <nav id="main-nav" class="main-nav" aria-label="Temple filters">
+        <button class="nav-btn" data-filter="home" aria-pressed="true">Home</button>
+        <button class="nav-btn" data-filter="old">Old (before 1900)</button>
+        <button class="nav-btn" data-filter="new">New (after 2000)</button>
+        <button class="nav-btn" data-filter="large">Large (&gt; 90,000 sq ft)</button>
+        <button class="nav-btn" data-filter="small">Small (&lt; 10,000 sq ft)</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 id="section-title">All Temples</h2>
+
+    <!-- Gallery: will be filled dynamically by JS -->
+    <section id="gallery" class="gallery" aria-live="polite"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="currentyear"></span> | Xiyan Lin</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
