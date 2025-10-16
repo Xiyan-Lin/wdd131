@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WDD 131 – Product Review - Xiyan</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Xiyan Lin | Product review form - submit reviews and get a confirmation." />
+  <meta name="author" content="Xiyan Lin">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <h1 class="site-title">Product Review</h1>
+    </div>
+  </header>
+
+  <main class="container" id="main">
+    <form id="reviewForm" action="review.html" method="get" novalidate>
+      <!-- PRODUCT NAME -->
+      <div class="form-group">
+        <label for="productSelect">Product Name</label>
+        <select id="productSelect" name="product" required>
+          <option value="" disabled selected>Select a Product ...</option>
+          <!-- options injected by JS -->
+        </select>
+      </div>
+
+      <!-- RATING -->
+      <fieldset class="form-group">
+        <legend>Overall Rating</legend>
+        <div class="rating-row" role="radiogroup" aria-labelledby="ratingLabel">
+          <span id="ratingLabel" class="sr-only">Overall rating 1 to 5</span>
+
+          <label class="star-label" for="rating1">☆<span class="sr-only">1 star</span></label>
+          <input id="rating1" name="rating" type="radio" value="1" required>
+
+          <label class="star-label" for="rating2">☆☆<span class="sr-only">2 stars</span></label>
+          <input id="rating2" name="rating" type="radio" value="2">
+
+          <label class="star-label" for="rating3">☆☆☆<span class="sr-only">3 stars</span></label>
+          <input id="rating3" name="rating" type="radio" value="3">
+
+          <label class="star-label" for="rating4">☆☆☆☆<span class="sr-only">4 stars</span></label>
+          <input id="rating4" name="rating" type="radio" value="4">
+
+          <label class="star-label" for="rating5">☆☆☆☆☆<span class="sr-only">5 stars</span></label>
+          <input id="rating5" name="rating" type="radio" value="5">
+        </div>
+      </fieldset>
+
+      <!-- DATE -->
+      <div class="form-group">
+        <label for="installDate">Date of Installation</label>
+        <input id="installDate" name="installDate" type="date" required>
+      </div>
+
+      <!-- FEATURES (checkboxes) -->
+      <fieldset class="form-group">
+        <legend>Which features did you find useful in the product? <span class="muted">(Check all that apply)</span></legend>
+        <div class="checkbox-grid">
+          <div>
+            <input id="durability" type="checkbox" name="features" value="Durability">
+            <label for="durability">Durability</label>
+          </div>
+          <div>
+            <input id="ease" type="checkbox" name="features" value="Ease of Use">
+            <label for="ease">Ease of Use</label>
+          </div>
+          <div>
+            <input id="performance" type="checkbox" name="features" value="Performance">
+            <label for="performance">Performance</label>
+          </div>
+          <div>
+            <input id="design" type="checkbox" name="features" value="Design">
+            <label for="design">Design</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- WRITTEN REVIEW -->
+      <div class="form-group">
+        <label for="writtenReview">Written Review <span class="muted">(Optional)</span></label>
+        <textarea id="writtenReview" name="review" rows="6" placeholder="Share your thoughts..."></textarea>
+      </div>
+
+      <!-- USER NAME -->
+      <div class="form-group">
+        <label for="username">Your Name <span class="muted">(Optional)</span></label>
+        <input id="username" name="username" type="text" placeholder="Your name">
+      </div>
+
+      <!-- SUBMIT -->
+      <div class="form-actions">
+        <input class="submit-btn" type="submit" value="Post Review">
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> 🌸 Xiyan Lin</p>
+    <p id="lastModified">Last Modification: </p>
+  </footer>
+</body>
+</html>
