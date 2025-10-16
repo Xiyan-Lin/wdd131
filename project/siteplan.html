@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Site Plan — Fitness Motivation</title>
+
+  <!-- Google Font (preconnect + link) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo" aria-label="Fitness Motivation logo">
+      <span class="logo-mark">💪</span>
+      <span class="logo-text">Fitness Motivation</span>
+    </div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="tips.html">Workout Tips</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="plan-section">
+      <h1>Site Plan — <span class="accent">Fitness Motivation</span></h1>
+
+      <h2>Site Name</h2>
+      <p><strong>Fitness Motivation</strong></p>
+      <p class="muted">
+        A simple brand name intended to inspire visitors to start or maintain a healthy exercise habit.
+      </p>
+
+      <h2>Why this name?</h2>
+      <p>
+        Short, clear, and motivational — it indicates the site's purpose (fitness tips and motivation), and is
+        easy to remember for the target audience (beginners and casual exercisers).
+      </p>
+    </section>
+
+    <section class="plan-section">
+      <h2>Site Purpose</h2>
+      <p>
+        The website provides straightforward workout tips, short motivational content, and a small community
+        contact form. It will include:
+      </p>
+      <ul>
+        <li>Home page with hero and motivational message</li>
+        <li>Workout Tips page that shows randomized tips (generated via JavaScript)</li>
+        <li>Contact page with a simple subscribe form that saves a name in <code>localStorage</code></li>
+        <li>References page listing image sources and citations</li>
+      </ul>
+    </section>
+
+    <section class="plan-section">
+      <h2>Scenarios (Target Audience Questions)</h2>
+      <ol>
+        <li><strong>“I only have 10 minutes — what quick exercise can I do right now?”</strong>
+          <p class="muted">→ The site will show short, doable suggestions (e.g., 10 push-ups, squats).</p>
+        </li>
+        <li><strong>“How can I start exercising if I’m a total beginner?”</strong>
+          <p class="muted">→ The site will have beginner-friendly tips and motivational prompts.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="plan-section colors">
+      <h2>Color Schema</h2>
+      <p>Selected palette (applied in this document):</p>
+
+      <div class="swatches">
+        <div class="swatch">
+          <div class="swatch-sample" style="background-color: var(--primary);"></div>
+          <div class="swatch-label">
+            <strong>--primary</strong><br>#007a33<br>Use: header, primary buttons, accents
+          </div>
+        </div>
+
+        <div class="swatch">
+          <div class="swatch-sample" style="background-color: var(--accent);"></div>
+          <div class="swatch-label">
+            <strong>--accent</strong><br>#f1f1f1<br>Use: backgrounds, cards
+          </div>
+        </div>
+
+        <div class="swatch">
+          <div class="swatch-sample" style="background-color: var(--accent-2);"></div>
+          <div class="swatch-label">
+            <strong>--accent-2</strong><br>#ffd166<br>Use: callout highlights, CTA hover
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="plan-section typography">
+      <h2>Typography</h2>
+      <p>Selected font(s):</p>
+      <ul>
+        <li><strong>Inter</strong> — used for headings and body. (Google Font included in <code>&lt;head&gt;</code>)</li>
+      </ul>
+      <p class="muted">Reason: Inter is clean, highly readable for both mobile and desktop and fits the simple brand.</p>
+    </section>
+
+    <section class="plan-section wireframes">
+      <h2>Wireframes</h2>
+      <p>Below are simple visual wireframes for the Home page.</p>
+
+      <h3>Mobile View (stacked)</h3>
+      <div class="wireframe mobile">
+        <div class="wf-header">Header / Logo / Nav</div>
+        <div class="wf-hero">Hero image (responsive) + headline</div>
+        <div class="wf-data">Main content / Motivational card</div>
+        <div class="wf-tips">Featured Tip (JS-driven)</div>
+        <div class="wf-weather">Optional small widget</div>
+        <div class="wf-footer">Footer / Links / References</div>
+      </div>
+
+      <h3>Desktop / Wide View (three-column layout)</h3>
+      <div class="wireframe desktop">
+        <div class="wf-row">
+          <div class="wf-left">Left (Data / Menu)</div>
+          <div class="wf-center">Center (Hero / Featured content)</div>
+          <div class="wf-right">Right (Tips or small widgets)</div>
+        </div>
+        <div class="wf-footer">Footer (full width)</div>
+      </div>
+
+      <p class="muted small">
+        These wireframes are schematic only; the final site will keep the same content regions but be styled
+        responsively with CSS grid/flex.
+      </p>
+    </section>
+
+    <section class="plan-section deliverables">
+      <h2>Deliverables & Requirements Checklist</h2>
+      <ul>
+        <li>At least 3 pages: Home, Workout Tips, Contact (plus References)</li>
+        <li>Common navigation & theme across pages</li>
+        <li>Responsive design (mobile-first) using CSS variables and media queries</li>
+        <li>Optimized images (WebP), lazy loading on content images</li>
+        <li>JavaScript features: multiple functions, DOM selection, event listeners, conditionals, objects/arrays, template literals, localStorage</li>
+        <li>Accessibility and valid HTML structure; references page linked in footer</li>
+      </ul>
+    </section>
+
+    <section class="plan-section author">
+      <h2>Author & Notes</h2>
+      <p>Created by: <strong>Xiyan Lin</strong></p>
+      <p>Planned timeline: design → content → implementation → testing → deploy to GitHub Pages</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Fitness Motivation — <a href="references.html">References</a></p>
+  </footer>
+
+  <script>
+    // small script to set year (keeps JS minimal and unobtrusive)
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
