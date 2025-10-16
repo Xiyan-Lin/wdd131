@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Fitness Motivation</title>
+  <meta name="description" content="Contact and join our small fitness community." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo"><span class="logo-mark" aria-hidden="true">💪</span><span class="logo-text">Fitness Motivation</span></div>
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="tips.html">Workout Tips</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Contact & Join</h1>
+
+    <form id="joinForm" novalidate>
+      <div class="form-row">
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+      </div>
+
+      <div class="form-row">
+        <label for="pref">Preferred workout type</label>
+        <select id="pref" name="pref" required>
+          <option value="">Choose</option>
+          <option value="cardio">Cardio</option>
+          <option value="strength">Strength</option>
+          <option value="flexibility">Flexibility</option>
+        </select>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Save</button>
+        <button id="clearBtn" type="button" class="btn-secondary">Clear saved name</button>
+      </div>
+
+      <p id="formMessage" class="muted" role="status" aria-live="polite"></p>
+    </form>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year-3"></span> Fitness Motivation • <a href="references.html">References</a></p>
+  </footer>
+</body>
+</html>

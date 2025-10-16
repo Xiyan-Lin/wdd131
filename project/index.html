@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fitness Motivation — Home</title>
+  <meta name="description" content="Fitness Motivation: short workout tips, motivation, and a small community form." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo" aria-label="Fitness Motivation logo">
+      <span class="logo-mark" aria-hidden="true">💪</span>
+      <span class="logo-text">Fitness Motivation</span>
+    </div>
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html" class="active">Home</a>
+      <a href="tips.html">Workout Tips</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <picture class="hero-picture">
+        <source media="(min-width: 800px)" srcset="images/hero-large.webp">
+        <source media="(min-width: 401px)" srcset="images/hero-large.webp">
+        <img src="images/hero-mobile.webp" alt="Person running with sunrise" loading="lazy">
+      </picture>
+      <div class="hero-content">
+        <h1>Small steps. Big results.</h1>
+        <p>Short workouts you can do anywhere — starts with 5–10 minutes a day.</p>
+        <a class="btn" href="tips.html" role="button">Get a Tip</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <article class="card">
+        <h2>Quick Tips</h2>
+        <p>Simple, practical exercises you can do immediately.</p>
+        <button id="randomTipBtn" class="btn-secondary">Show Quick Tip</button>
+        <p id="randomTip" class="output" aria-live="polite"></p>
+      </article>
+
+      <article class="card">
+        <h2>Saved Name</h2>
+        <p id="greeting">Not signed in</p>
+        <a href="contact.html" class="link">Sign in / Save name</a>
+      </article>
+
+      <article class="card">
+        <h2>Weather (static)</h2>
+        <p>Temperature: <span id="temp">8</span> °C</p>
+        <p>Wind: <span id="wind">12</span> km/h</p>
+        <p>Wind Chill: <span id="windchill">N/A</span></p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Fitness Motivation • <a href="references.html">References</a></p>
+  </footer>
+</body>
+</html>
